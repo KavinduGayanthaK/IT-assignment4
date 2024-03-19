@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+
+    <style>
+        section{
+            display: inline;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            height: fit-content;
+            margin: auto;
+
+        }
+        section>div{
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            background: purple;
+            color: white;
+            width: 250px;
+            height: 60px;
+            position: relative;
+            margin-left: -192px;
+            transition-duration: 1s;
+        }
+        section>div:hover{
+            margin-left: 0;
+
+        }
+        section>div>div{
+            height: fit-content;
+            position: absolute;
+            right: 20px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        section>div>h3 {
+            height: fit-content;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 20px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+<section>
+    <div>
+        <h3>Menu One</h3>
+        <div>
+           <i class="fa-solid fa-rocket"></i>
+        </div>
+    </div>
+
+    <div>
+        <h3>Menu two</h3>
+        <div> <i class="fa-solid fa-rocket"></i></div>
+    </div>
+
+    <div>
+        <h3>Menu Three</h3>
+        <div> <i class="fa-solid fa-rocket"></i></div>
+    </div>
+
+    <div>
+        <h3>Menu Four</h3>
+        <div> <i class="fa-solid fa-rocket"></i></div>
+    </div>
+
+    <div>
+        <h3>Menu Five</h3>
+        <div> <i class="fa-solid fa-rocket"></i> </div>
+    </div>
+
+</section>
+</body>
+</html>
