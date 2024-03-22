@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+    <style>
+        section {
+            width: 100vw;
+            height: 97vh;
+            overflow: hidden;
+        }
+
+        section > div:first-child {
+            width: 100vw;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+            background-image: url("assets/sky.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        section > div:nth-child(2) {
+            display: flex;
+            width: 100vw;
+            height: 30vh;
+            bottom: 0;
+            margin: auto;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+
+            animation-name: slide;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+
+        }
+        section>div:nth-child(2)>div{
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+        }
+
+        section > div:nth-child(3) {
+            display: flex;
+            width: 100vw;
+            height: 50vh;
+            bottom: 30vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+
+            animation-name: slide;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+        }
+
+        section > div:nth-child(4) {
+            width: 25vw;
+            height: 18vh;
+            padding: 0;
+            left: 0;
+            right: 0;
+            bottom: 25vh;
+            margin: auto;
+            background-image: url("assets/car.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+
+
+        }
+
+        section > div:nth-child(5) {
+            width: 5vw;
+            height: 11vh;
+            border-radius: 100%;
+            left: 39.5vw;
+            bottom: 20vh;
+            margin: auto;
+            background-image: url("assets/wheel.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+
+            animation-name: rotate;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+        }
+
+        section > div:nth-child(6) {
+            width: 5vw;
+            height: 11vh;
+            right: 40.2vw;
+            bottom: 20vh;
+            margin: auto;
+            background-image: url("assets/wheel.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+
+            animation-name: rotate;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0)
+            } 100% {
+                transform: translateX(-450px)
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div></div>
+        <div>
+            <img src="assets/road.jpg" alt="">
+        </div>
+        <div>
+            <img src="assets/city.png" alt="">
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</body>
+</html>
